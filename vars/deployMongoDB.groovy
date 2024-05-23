@@ -8,10 +8,4 @@ def call() {
         inventory: 'aws_ec2.yml',
         playbook: 'pb.yml'
     )
-    // Notification
-    emailext(
-        subject: 'Ansible Deployment Status',
-        body: 'The Ansible deployment has completed.',
-        to: 'bhanudabas7@gmail.com'
-    )
 }
